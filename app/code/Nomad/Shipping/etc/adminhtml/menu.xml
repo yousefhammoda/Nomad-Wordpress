@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
+    <menu>
+        <add id="Nomad_Shipping::return_requests" title="Nomad Returns" module="Nomad_Shipping" sortOrder="10" parent="Magento_Sales::sales" resource="Nomad_Shipping::return_requests" />
+    </menu>
+</config>

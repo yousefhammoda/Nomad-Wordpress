@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/order_statuses.xsd">
+    <statuses>
+        <status code="return_under_review" label="Return Under Review"/>
+        <status code="return_approved" label="Return Approved"/>
+        <status code="return_rejected" label="Return Rejected"/>
+        <status code="return_under_inspection" label="Return Under Inspection"/>
+        <status code="return_accepted" label="Return Accepted"/>
+        <status code="return_closed" label="Return Closed"/>
+    </statuses>
+</config>

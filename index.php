@@ -176,10 +176,8 @@ add_action( 'woocommerce_after_add_to_cart_button', 'nomad_block_after_add_to_ca
 function nomad_block_after_add_to_cart() {
     global $NomadSettings;
     if(isset($NomadSettings['show_promo_product']) && $NomadSettings['show_promo_product']=="yes"){
-        $logo_url = plugins_url( 'assets/images/nomad-logo.png', __FILE__ );
         echo '<div class="nomad-after-cart-block" style="margin-top:20px; padding:15px; background:#f8f8f8; border:1px solid #ddd;font-size: 16px;border-radius: 8px;box-shadow: 0 2px 4px rgba(0,0,0,0.05);font-weight: 600;">';
-        echo '<div><img src="' . esc_url( $logo_url ) . '" alt="Nomadwear" style="max-width:100px; margin-right:10px; vertical-align:middle;">';
-        echo 'Buy Now, Get It Today!</div>';
+        echo '<div>Buy Now, Get It Today!</div>';
         echo '</div>';
     }
 }
@@ -189,10 +187,8 @@ function nomad_block_after_proceed_to_checkout() {
     global $NomadSettings;
     //echo "<pre>";print_r($NomadSettings);echo "</pre>";
     if(isset($NomadSettings['show_promo_cart']) && $NomadSettings['show_promo_cart']=="yes"){
-        $logo_url = plugins_url( 'assets/images/nomad-logo.png', __FILE__ );
         echo '<div class="nomad-after-cart-block" style="margin-top:20px; padding:15px; background:#f8f8f8; border:1px solid #ddd;font-size: 16px;border-radius: 8px;box-shadow: 0 2px 4px rgba(0,0,0,0.05);font-weight: 600;">';
-        echo '<div><img src="' . esc_url( $logo_url ) . '" alt="Nomadwear" style="max-width:100px; margin-right:10px; vertical-align:middle;">';
-        echo 'Get it with Nomad today!</div>';
+        echo '<div>Get it with Nomad today!</div>';
         echo '</div>';
     }
 }
@@ -203,10 +199,8 @@ function nomad_block_before_place_order() {
      global $NomadSettings;
     //echo "<pre>";print_r($NomadSettings);echo "</pre>";
     if(isset($NomadSettings['show_promo_checkout']) && $NomadSettings['show_promo_checkout']=="yes"){
-        $logo_url = plugins_url( 'assets/images/nomad-logo.png', __FILE__ );
         echo '<div class="nomad-after-cart-block" style="margin-top:20px; padding:15px; background:#f8f8f8; border:1px solid #ddd;font-size: 16px;border-radius: 8px;box-shadow: 0 2px 4px rgba(0,0,0,0.05);font-weight: 600;">';
-        echo '<div><img src="' . esc_url( $logo_url ) . '" alt="Nomadwear" style="max-width:100px; margin-right:10px; vertical-align:middle;">';
-        echo 'Get it with Nomad today!</div>';
+        echo '<div>Get it with Nomad today!</div>';
         echo '</div>';
     }
 }
