@@ -1,0 +1,8 @@
+<form action="<?php echo $block->getUrl('*/*/index'); ?>" method="post">
+    <input type="hidden" name="order_id" value="<?php echo $block->escapeHtml($block->getRequest()->getParam('order_id')); ?>" />
+    <div>
+        <label><?php echo __('Reason'); ?></label>
+        <textarea name="reason" required></textarea>
+    </div>
+    <button type="submit"><?php echo __('Submit'); ?></button>
+</form>

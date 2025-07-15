@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Shipping\Model\Config">
+        <arguments>
+            <argument name="carriers" xsi:type="array">
+                <item name="nomad" xsi:type="string">Nomad\Shipping\Model\Carrier\Nomad</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="nomad_save_address" type="Nomad\Shipping\Plugin\SaveAddressInformation"/>
+    </type>
+    <preference for="Nomad\Shipping\Api\OrderStatusManagementInterface" type="Nomad\Shipping\Model\OrderStatusManagement"/>
+</config>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Ui/etc/ui_configuration.xsd">
+    <columns name="nomad_return_request_columns">
+        <column name="request_id">
+            <settings><filter>text</filter><label>ID</label></settings>
+        </column>
+        <column name="order_id">
+            <settings><filter>text</filter><label>Order ID</label></settings>
+        </column>
+        <column name="reason">
+            <settings><filter>text</filter><label>Reason</label></settings>
+        </column>
+        <column name="status">
+            <settings><filter>select</filter><label>Status</label></settings>
+        </column>
+        <column name="created_at">
+            <settings><filter>date</filter><label>Created</label></settings>
+        </column>
+    </columns>
+    <dataSource name="nomad_return_request_listing_data_source">
+        <argument name="dataProvider" xsi:type="configurableObject">
+            <argument name="class" xsi:type="string">Nomad\Shipping\Model\ReturnRequest\DataProvider</argument>
+            <argument name="name" xsi:type="string">nomad_return_request_listing_data_source</argument>
+            <argument name="primaryFieldName" xsi:type="string">request_id</argument>
+            <argument name="requestFieldName" xsi:type="string">id</argument>
+        </argument>
+    </dataSource>
+</listing>
